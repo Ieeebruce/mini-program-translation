@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/history/history",
+    "pages/change/change"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "PM Translation",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position":"top",
+    "selectedColor": "#000",
+    "color": "#999",
+    "backgroundColor": "#FFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "translation"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "history"
+      }
+    ]
+  }
+}

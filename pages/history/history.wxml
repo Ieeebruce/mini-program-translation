@@ -1,0 +1,14 @@
+<!--pages/history/history.wxml-->
+<view class="container">
+<scroll-view scroll-y >
+  <text class="text-title">翻译历史</text>
+  <view class="item" wx:for="{{history}}" wx:key="index" bindtap="onTapItem">
+    <view class="inputText">{{item.inputText}}</view>
+    <view class="result">{{item.result}}</view>
+  </view>
+
+</scroll-view>
+<view class="footer">
+  <text>Copyright © 2019 Ieeebruce</text>
+</view>
+</view>

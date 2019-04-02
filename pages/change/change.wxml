@@ -1,0 +1,10 @@
+<!--pages/change/change.wxml-->
+<view class="container">
+<text class="text-title">翻译成</text>
+<view class="item"  wx:for="{{languageList}}" ></view>
+<view>
+<text class="txt">{{language.chs}}</text>
+<text class="iconfont icon-duihao" wx:if="{{index === selectedLanguage}}"></text>
+</view>
+
+</view>
