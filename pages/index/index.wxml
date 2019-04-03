@@ -13,8 +13,8 @@
 
   <view class="output-area">
     <view class="text-title">译文</view>
-    <view class="text-result" wx:for="{{result}}" wx:key="{{index}}">
-      <text selectable="false">{{item.vlaue}}</text>
+    <view class="text-result">
+      <text selectable="true">{{result}}</text>
     </view>
   </view>
   <view class="footer">

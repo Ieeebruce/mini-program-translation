@@ -24,7 +24,9 @@
   top: 25rpx;
   z-index: 10;
 }
-
+.text-result{
+  padding: 30rpx;
+}
 .output-area{
   border-top: 3rpx solid #999;
 }
