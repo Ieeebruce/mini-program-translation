@@ -13,8 +13,8 @@
   color: #555;
 }
 .item{
-  padding: 15rpx;
-  border-bottom: 3rpx solid #999;
+  padding: 30rpx;
+  border-bottom: 3rpx solid #aaa;
 }
 .footer{
   position: absolute;

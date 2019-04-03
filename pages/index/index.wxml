@@ -2,19 +2,19 @@
 <view class="container">
   <view class="select-language">
     <navigator url="/pages/change/change" hover-class="text-hover">
-      <text>翻译成：{{language}}</text>
+      <text>翻译成：{{selectedLanguage}}</text>
       <text class="iconfont icon-down"></text>
     </navigator>
   </view>
   <view class="input-area">
-    <textarea placeholder="请输入要翻译的文本" placeholder-style="color:#666;" bindinput="onInput" bindconfirm="onConfirm"></textarea>
+    <textarea placeholder="请输入要翻译的文本" placeholder-style="color:#666;" bindinput="onInput" bindconfirm="onConfirm" bindblur='onConfirm' value="{{inputText}}"></textarea>
     <text class="iconfont icon-close" hidden="{{hideClearButton}}" bindtap="clearInputArea"></text>
   </view>
 
   <view class="output-area">
     <view class="text-title">译文</view>
-    <view>
-      <textarea placeholder-style="color:#555;"></textarea>
+    <view class="text-result" wx:for="{{result}}" wx:key="{{index}}">
+      <text selectable="false">{{item.vlaue}}</text>
     </view>
   </view>
   <view class="footer">

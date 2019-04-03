@@ -1,1 +1,4 @@
 /* pages/change/change.wxss */
+.item .iconfont{
+  padding-left: 30rpx;
+}
