@@ -20,7 +20,7 @@
 .input-area .iconfont {
   position: absolute;
   font-size: 35rpx;
-  right: 15rpx;
+  right: 30rpx;
   top: 25rpx;
   z-index: 10;
 }

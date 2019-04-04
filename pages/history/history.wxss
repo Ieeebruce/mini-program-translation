@@ -1,1 +1,14 @@
 /* pages/history/history.wxss */
+.scrollPage{
+margin-bottom: 16rpx;
+}
+.text-title{
+  padding-bottom: 40rpx;
+}
+.item{
+  display: flex;
+  padding: 20rpx;
+}
+.item .result{
+  padding-left: 50rpx;
+}

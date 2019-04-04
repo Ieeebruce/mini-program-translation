@@ -15,6 +15,7 @@ Page({
   clearInputArea: function() {
     this.setData({
       'inputText': '',
+      'result': '',
       hideClearButton: true
     })
   },
@@ -43,7 +44,6 @@ Page({
         this.setData({
           'result': res.trans_result[0].dst
         });
-        console.log(this.data.result)
         let history = wx.getStorageSync('history') || [];
         history.unshift({
           inputText: this.data.inputText,

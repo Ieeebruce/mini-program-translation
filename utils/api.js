@@ -18,7 +18,6 @@ function translate(q, { from = 'auto', to = 'auto' } = { from: 'auto', to: 'auto
         sign
       },
       success(res) {
-        console.log(res)
         if (res.data && res.data.trans_result) {
           resolve(res.data)
         } else {
@@ -31,7 +30,6 @@ function translate(q, { from = 'auto', to = 'auto' } = { from: 'auto', to: 'auto
         }
       },
       fail(res) {
-        console.log(res)
         reject({ status: 'error', msg: '翻译失败' })
         wx.showToast({
           title: '网络异常',
